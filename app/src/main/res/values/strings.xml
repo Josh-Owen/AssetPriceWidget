@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AssetPriceWidget</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">A stock widget which displays information regarding your specified ticker symbols.</string>
 </resources>
