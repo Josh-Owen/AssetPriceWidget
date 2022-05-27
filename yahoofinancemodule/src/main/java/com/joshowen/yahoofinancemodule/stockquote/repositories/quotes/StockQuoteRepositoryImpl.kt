@@ -25,8 +25,8 @@ class StockQuoteRepositoryImpl @Inject constructor(): StockQuoteRepository {
 
     override fun getStockQuote(
         symbol : String,
-        region: String?,
-        language: String?
+        region: String,
+        language: String
     ): Single<StockQuoteResponse> {
         return getAPIService().getStockQuote(YAHOO_FINANCE_API_KEY, symbol, region, language)
     }

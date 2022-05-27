@@ -7,10 +7,8 @@ import com.joshowen.yahoofinancemodule.stockquote.repositories.quotes.StockQuote
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.core.Single
 
-class WidgetUpdater(appContext: Context, workerParams: WorkerParameters):
+class WidgetUpdater(appContext: Context, workerParams: WorkerParameters) :
     RxWorker(appContext, workerParams) {
-
-
 
     override fun createWork(): Single<Result> {
 
