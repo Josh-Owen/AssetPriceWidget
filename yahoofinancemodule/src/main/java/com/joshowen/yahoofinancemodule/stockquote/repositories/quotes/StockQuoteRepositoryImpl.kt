@@ -24,11 +24,11 @@ class StockQuoteRepositoryImpl @Inject constructor(): StockQuoteRepository {
 
 
     override fun getStockQuote(
-        symbols: List<String>,
+        symbol : String,
         region: String?,
-        lang: String?
+        language: String?
     ): Single<StockQuoteResponse> {
-        return getAPIService().getStockQuote(YAHOO_FINANCE_API_KEY, "GME", "US", "en")
+        return getAPIService().getStockQuote(YAHOO_FINANCE_API_KEY, symbol, region, language)
     }
 
     companion object {

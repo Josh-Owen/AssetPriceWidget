@@ -13,8 +13,7 @@ class MainActivityVM @Inject constructor(private val stockRepo : StockQuoteRepos
 
 
     fun getAPIResponse() : Single<StockQuoteResponse> {
-        return stockRepo.getStockQuote(listOf("GME"), "GB", "en")
+        return stockRepo.getStockQuote("GME", "GB", "en")
     }
-
 
 }

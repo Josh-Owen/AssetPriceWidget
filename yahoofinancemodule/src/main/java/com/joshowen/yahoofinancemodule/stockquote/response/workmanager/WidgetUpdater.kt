@@ -20,7 +20,7 @@ class WidgetUpdater(appContext: Context, workerParams: WorkerParameters):
         val ticker = inputData.getString(TICKER_KEY)
         val region = inputData.getString(REGION_KEY)
 
-        return stockRepo.getStockQuote(listOf(ticker ?: ""), region, language).map {response ->
+        return stockRepo.getStockQuote(ticker ?: "", region, language).map { response ->
             val outputData = workDataOf(API_BUNDLE to response)
             Result.success(outputData)
         }.onErrorReturn { Result.failure() }

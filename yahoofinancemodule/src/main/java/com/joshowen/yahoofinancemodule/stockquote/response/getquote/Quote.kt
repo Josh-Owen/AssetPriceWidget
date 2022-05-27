@@ -8,5 +8,6 @@ data class Quote (
     val exchangeTimezoneShortName : String = "",
     val regularMarketOpen : Double?= 0.0,
     val regularMarketPrice :Double?= 0.0,
-    val marketState : String?= ""
+    val marketState : String?= "",
+    val postMarketPrice : Double?= 0.0,
 )

@@ -4,5 +4,5 @@ import okhttp3.internal.http2.ErrorCode
 
 data class StockQuoteResponse (
     val error : ErrorCode?= null,
-    val stockQuoteBody : StockQuoteBody?= null
+    val quoteResponse : StockQuoteBody?= null
 )
