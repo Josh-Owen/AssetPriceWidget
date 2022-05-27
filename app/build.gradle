@@ -44,6 +44,7 @@ var work_version = "2.7.1"
 dependencies {
 
     implementation project(":yahoofinancemodule")
+    implementation project(":databasemodule")
 
     // Android
     implementation 'androidx.databinding:databinding-compiler-common:7.2.0'
